@@ -3,7 +3,6 @@ import pandas as pd
 import datetime
 
 
-
 # Sayfa Ayarları
 st.set_page_config(
     page_title="Recommendation",
@@ -31,12 +30,12 @@ st.markdown("*Let's help them!*")
 st.image("https://1000logos.net/wp-content/uploads/2017/05/Netflix-Logo.png")
 
 # Pandasla veri setini okuyalım ve düzenleyelim
-df_title = pd.read_csv('/Users/hasanenesguray/Desktop/DSBootcamp/Projects/5.Project/Netflix/Streamlit/df_title.csv')
+df_title = pd.read_csv('df_title.csv')
 df_title['Year'] = df_title['Year'].fillna(-1)
 df_title['Year'] = df_title['Year'].astype('int')
-df = pd.read_csv('/Users/hasanenesguray/Desktop/DSBootcamp/Projects/5.Project/Netflix/Streamlit/df.csv')
+df = pd.read_csv('df.csv')
 df['Rating'] = df['Rating'].astype('int')
-df_movie_summary = pd.read_csv('/Users/hasanenesguray/Desktop/DSBootcamp/Projects/5.Project/Netflix/Streamlit/df_movie_summary.csv')
+df_movie_summary = pd.read_csv('df_movie_summary.csv')
 
 # Tablo Ekleme
 st.header("Data Dictionary of Movie Ratings")
