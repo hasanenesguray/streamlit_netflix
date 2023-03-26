@@ -1,35 +1,6 @@
 import streamlit as st
-import psycopg2
 import pandas as pd
 import datetime
-import numpy as np
-from sklearn.model_selection import train_test_split
-
-from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
-
-import numpy as np 
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
-
-import re
-import string
-from joblib import load
-from nltk.stem import SnowballStemmer
-from textblob import TextBlob
-from sklearn.feature_extraction.text import CountVectorizer
-
-import pandas as pd
-import numpy as np
-import math
-import re
-from scipy.sparse import csr_matrix
-import matplotlib.pyplot as plt
-import seaborn as sns
-from surprise import Reader, Dataset, SVD
-from surprise.model_selection import cross_validate
 
 
 
